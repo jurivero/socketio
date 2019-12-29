@@ -1,0 +1,46 @@
+html {
+background-color:  #cc7319 !important;
+  }
+body {
+padding-top: 10px;
+font-size: 16px;
+background: transparent;
+color:blue;
+}
+    ul li {
+  color: rgb(195, 205, 50);
+         list-style-type: disc;
+  margin-left: 2em;
+    }
+
+
+ul li span {
+  color: black;
+}
+
+    #chatWindow{
+        display:none;
+    }
+
+ .whisper{
+  /* color:	#0e492d;*/
+   color: #292284;
+   font-style:italic;
+   font-weight: bold;
+ }
+
+ .error{
+   color:#800000;
+ }
+ ::placeholder {
+  color: Black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+}

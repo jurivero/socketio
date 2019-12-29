@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>type something </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+  <link rel="icon" href="/images/chat_logo.png" type="image/x-icon"/>
+   
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+     <div class="" align="center" id="nickWrap">
+       <img height="500" width="500" class="img-circle" src="/images/minion.jpg"/>
+         <h3>Pick a nickname</h3>
+       <p id="nickError"></p>
+       <div class="form-group">
+       <form id="setNick" role="form">
+         <input  type="text"  required placeholder="Type Your nickname" id="nickname"/>
+         <input class="btn btn-primary" type="submit" value="Submit"/>
+       </form>
+     </div>
+    </div>
+   </div>
+ </div>
+
+
+<div id="chatWindow">
+
+ <div class="container">
+ 		<div class="row">
+ 			<div class="col-md-6 col-sm-offset-1 panel panel-primary">
+            <div class="panel-body">
+               <div id="contentWrap" >
+                  <div id="chatWrap" style="border-radius: 10px; background: #F0E0B0 ;min-height: 300;max-height: 500;overflow-y: scroll;">
+                      <div id="chat"></div>
+                  </div>
+               </div>
+            </div>
+        </div>
+   <br/>
+      <div class="col-md-4 col-sm-offset-1 panel panel-default">
+        <div class="panel-heading">Currently Online</div>
+         <div class="panel-body">
+            <div  id="users"></div>
+        </div>
+      </div>
+        <h4 align="center">Invite your friends by sharing the <a target="_blank" href="https://awesome-socket-io.herokuapp.com/">link</a></h4>
+   </div>
+ </div>
+ <br/>
+
+ <div class="row">
+  <div class="col-md-3 col-md-offset-2">
+    <form id="message-box" style="color:white;">
+      <div class="form-group">
+       <textarea required autofocus style="background-color:#0e9243;border:double 4px orange;border-radius: 0.5em;color:white; " rows="3" cols="60" id="message"  placeholder="Write your message and press enter.."></textarea>
+      </div>
+   </form>
+ </div>
+ </div>
+
+ <div class="row">
+  <h1 align="center"><code>@Juan hola</code> to say hola to Juan privately</h1>
+ </div>
+
+</div>
+
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="/js/bootstrap.js"></script>
+   <script src="/js/index.js"></script>
+   <script>
+   
+   </script>
+</body>
+</html>
